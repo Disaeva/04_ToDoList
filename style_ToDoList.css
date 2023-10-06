@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    --light-blue: #0ea5e9;
+    --dark-blue: #0284c7;
+    --light-gray: #e5e5e5;
+    --dark-gray: #737373;
+    --main-font: #171717;
+    --gap: 20px;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--main-font);
+    background-color: var(--light-gray);
+    margin: 100px 30px;
+}
+
+.content {
+    margin: auto;
+    max-width: 1024px;
+    background-color: white;
+
+    display: flex;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px gray;
+
+    overflow: hidden;
+}
+
+.content__background {
+    background-image: url(image_ToDoList.jpeg);
+    width: 30%;
+    background-size: cover;
+    background-position: top;
+}
+
+.tasklist {
+    padding: 10px;
+    width: 70%;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: auto;
+    padding: 20px;
+}
+
+input {
+    border-radius: 7px;
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--light-blue);
+    border-width: 2px;
+}
+
+.task-input {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+button {
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--light-blue);
+    padding: 10px;
+    border-style: none;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    background-color: var(--dark-blue);
+}
+
+p {
+    font-size: 20px;
+    color: var(--main-font);
+    margin-top: 10px;
+}

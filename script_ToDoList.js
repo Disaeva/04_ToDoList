@@ -2,7 +2,7 @@ let username = prompt('Для персонализации списка введ
 
 let personalList = document.getElementById('greeting')
 if (username) {
-    personalList.innerHTML = 'Ваш список дел, ' + username
+    personalList.innerHTML = 'Ваш список дел, ' + username + '.'
 } else {personalList.innerHTML = 'Список дел анонимного пользователя'}
 
 let count = 0
@@ -14,7 +14,7 @@ function addToList() {
     count++
 
     if (count <= 5) {
-        myTaskList.innerHTML = "<p>" + myTaskList.innerHTML + count + ". " + myInput.value + "</p>"
+        myTaskList.innerHTML = myTaskList.innerHTML + '<p>' + count + ". " + myInput.value + '</p>'
     } else {
         alert ("Не берите на себя слишком много!")
     }
