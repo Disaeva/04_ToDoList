@@ -31,4 +31,4 @@ taskInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         addToList(); // Call addToList when Enter is pressed
     }
-});
+})
